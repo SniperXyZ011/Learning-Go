@@ -1,0 +1,6 @@
+{
+  "go.goroot": "D:\\go",
+  "go.toolsEnvVars": {
+    "PATH": "D:\\go\\bin;${env:PATH}"
+  }
+}
