@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	// "maps"
+)
 
 func main() {
 	//how to create a map
@@ -43,5 +46,19 @@ func main() {
 	my_new_map := map[int]int {1: 4, 2 : 3}
 
 	fmt.Println(my_new_map[1])
+
+	// now here we will learn how to check if a key - val pair exist in a map
+	
+	new_map := map[string]string{"name" : "Shyam", "student" : "True"}
+
+	//now we want to check if name exists in this map
+	v, ok := new_map["you"] // this syntx will return => value, <a boolean value>, isko hum usually (_, ok) likhte hai in go, _ jab hume value use nh krna, baki if you want to use the value as well then koi dusra naam likhan pdgea jise yha par v likha hai  
+	if ok {
+		fmt.Println("We found the value :", v)
+	}else{
+		fmt.Println("We didn't find the value")
+	}
+
+	// fmt.Println(maps.Equal(m1, m2)) to check if two maps are equal or not, just like slices mai tha
 
 }
